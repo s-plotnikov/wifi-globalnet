@@ -1,0 +1,102 @@
+// Адаптивные элементы
+
+$maxWidth: 1900; // размер полотна
+$maxWidthContainer: 1650; // размер контейнера
+
+@mixin adaptiv-value($property, $startSize, $minSize, $type) {
+    $addSize: $startSize - $minSize;
+    @if $type==1 {
+        // Только если меньше контейнера
+        #{$property}: $startSize + px;
+        @media (max-width: #{$maxWidthContainer + px}) {
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
+        }
+    } @else if $type==2 {
+        // Только если больше контейнера
+        #{$property}: $startSize + px;
+        @media (min-width: #{$maxWidthContainer + px}) {
+            #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+        }
+    } @else {
+        // Всегда
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+    }
+}
+
+// @include adaptiv-value("font-size", 18, 16, 1);
+
+
+
+a,
+button,
+.dot,
+.swiper-button-next,
+.swiper-button-prev,
+.navigation-icon,
+.btn,
+.questions__item-title{
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-uzer-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  &:focus{
+    outline: none !important;
+  }
+}
+
+.noSelect{
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-uzer-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.noSelect:focus{
+  outline: none !important;
+}
+
+.content-wrapper p{
+  margin-bottom: 15px;
+}
+.content-wrapper ul{
+  margin-bottom: 16px;
+}
+.content-wrapper ol{
+  margin-bottom: 8px;
+}
+.content-wrapper li{
+  margin-bottom: 8px;
+}
+.content-wrapper h2,
+.content-wrapper .h2{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.content-wrapper h3,
+.content-wrapper .h3{
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+.content-wrapper h4,
+.content-wrapper .h4{
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.content-wrapper h5,
+.content-wrapper .h5{
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.phone,
+.mail{
+    -webkit-user-select: text !important;
+       -moz-user-select: text !important;
+        -ms-user-select: text !important;
+            user-select: text !important;
+}
