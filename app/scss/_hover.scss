@@ -47,4 +47,12 @@
       color: var(--accent);
     }
   }
+  .works:hover {
+    .works__descr {
+      opacity: 1;
+    }
+    .works__text {
+      transform: translateY(0);
+    }
+  }
 }

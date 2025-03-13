@@ -34,6 +34,13 @@
   .section-double-color::before {
     height: 30%;
   }
+  .tarif-card {
+    padding: 20px 15px;
+  }
+  .tarif-card__top {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 576px){
