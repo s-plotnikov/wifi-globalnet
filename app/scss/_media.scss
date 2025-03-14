@@ -5,6 +5,12 @@
   .header__wrp {
     gap: 30px;
   }
+  .step {
+    flex-wrap: wrap;
+    &__item {
+      width: 50%;
+    }
+  }
 }
 
 @media (max-width: 991px){
@@ -152,5 +158,9 @@
   }
   .section-double-color::before {
     height: 50%;
+  }
+  .step__item {
+    width: 100%;
+    padding: 24px 20px;
   }
 }
