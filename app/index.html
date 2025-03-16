@@ -29,7 +29,10 @@
       <header class="header">
         <div class="container">
           <div class="header__wrp">
-            <a href="#" class="logo header__logo"><img src="/images/logo.svg" alt=""></a>
+            <a href="#" class="logo header__logo">
+              <img class="__white" src="/images/logo.svg" alt="">
+              <img class="__dark" src="/images/logo-dark.svg" alt="">
+            </a>
             <div class="header__content">
               <div class="header__top">
                 <div class="d-none d-lg-flex">
@@ -47,7 +50,7 @@
                     </svg>
                     <span>8 800 999 999 99</span>
                   </a>
-                  <div class="btn btn_accent btn_md header__btn d-none d-md-flex">Обратный звонок</div>
+                  <div class="btn btn_accent btn_md header__btn d-none d-md-flex" data-fancybox data-src="#modal-callback" data-options='{"touch" : false}'>Обратный звонок</div>
                 </div>
                 <div class="menu-btn js-open-menu header__menu-btn">
                   <div></div>
@@ -94,7 +97,7 @@
         <p class="mb-5 fs-20">Беспроводной интернет от WIFI Globalnet гарантирует абонентам все преимущества
           высокоскоростного
           подключения: безлимитный трафик, стабильный сигнал 24/7 и быстрый доступ в Сеть с любого устройства.</p>
-        <div class="btn btn_accent hero__btn">Оставить заявку на подключение</div>
+        <div class="btn btn_accent hero__btn" data-fancybox data-src="#modal-callback" data-options='{"touch" : false}'>Оставить заявку на подключение</div>
       </div>
     </div>
   </div>
@@ -128,8 +131,11 @@
                 <div class="about-grid__img mb-2 mb-sm-4 me-4 me-sm-5">
                   <img src="/images/about-2.webp" alt="">
                 </div>
-                <div class="about-grid__img">
-                  <img src="/images/about-3.webp" alt="">
+                <div class="about-grid__img __video">
+                  <!-- <img src="/images/about-3.webp" alt=""> -->
+                  <video autoplay playsinline loop muted>
+                    <source src="/images/video.mp4" type="video/mp4">
+                  </video>
                 </div>
               </div>
             </div>
@@ -196,7 +202,7 @@
             </div>
           </div>
           <div class="d-sm-flex align-items-center">
-            <a href="#" class="btn btn_accent btn_lg mb-4 mb-sm-0">Оставить заявку</a>
+            <a href="#" class="btn btn_accent btn_lg mb-4 mb-sm-0" data-fancybox data-src="#modal-callback" data-options='{"touch" : false}'>Оставить заявку</a>
             <a class="d-flex align-items-center ms-sm-5" href="tel:+780099999999">
               <img src="/images/icons/phone.svg" alt="">
               <div class="ms-3">
@@ -291,7 +297,7 @@
         </div>
       </div>
       <div class="text-center">
-        <a href="#" class="btn btn_lg btn_accent">Оставить заявку на подключение</a>
+        <a href="#" class="btn btn_lg btn_accent" data-fancybox data-src="#modal-callback" data-options='{"touch" : false}'>Оставить заявку на подключение</a>
       </div>
     </div>
   </section>
@@ -326,7 +332,7 @@
                 </div>
               </div>
               <div class="text-center">
-                <a class="btn btn_lg btn_accent" href="#">Подключить со скидкой</a>
+                <a class="btn btn_lg btn_accent" href="#" data-fancybox data-src="#modal-callback" data-options='{"touch" : false}'>Подключить со скидкой</a>
               </div>
             </div>
           </div>
@@ -348,7 +354,7 @@
                 </div>
               </div>
               <div class="text-center">
-                <a class="btn btn_lg btn_accent" href="#">Подключить</a>
+                <a class="btn btn_lg btn_accent" href="#" data-fancybox data-src="#modal-callback" data-options='{"touch" : false}'>Подключить</a>
               </div>
             </div>
           </div>
@@ -374,7 +380,7 @@
                 </div>
               </div>
               <div class="text-center">
-                <a class="btn btn_lg btn_accent" href="#">Подключить</a>
+                <a class="btn btn_lg btn_accent" href="#" data-fancybox data-src="#modal-callback" data-options='{"touch" : false}'>Подключить</a>
               </div>
             </div>
           </div>
@@ -396,7 +402,7 @@
                 </div>
               </div>
               <div class="text-center">
-                <a class="btn btn_lg btn_accent" href="#">Подключить</a>
+                <a class="btn btn_lg btn_accent" href="#" data-fancybox data-src="#modal-callback" data-options='{"touch" : false}'>Подключить</a>
               </div>
             </div>
           </div>
@@ -418,7 +424,7 @@
                 </div>
               </div>
               <div class="text-center">
-                <a class="btn btn_lg btn_accent" href="#">Подключить</a>
+                <a class="btn btn_lg btn_accent" href="#" data-fancybox data-src="#modal-callback" data-options='{"touch" : false}'>Подключить</a>
               </div>
             </div>
           </div>
@@ -440,7 +446,7 @@
                 </div>
               </div>
               <div class="text-center">
-                <a class="btn btn_lg btn_accent" href="#">Подключить</a>
+                <a class="btn btn_lg btn_accent" href="#" data-fancybox data-src="#modal-callback" data-options='{"touch" : false}'>Подключить</a>
               </div>
             </div>
           </div>
@@ -459,7 +465,7 @@
         <p class="subtitle action__subtitle fw-600 mb-3">Акция</p>
         <h3 class="h3 color-white mb-3">Подключить Интернет на дачу</h3>
         <p class="action__text mb-4 mb-lg-5 color-white fs-20">На скорости от 150Mb + 8 700 ₽ с тарифом 490 ₽/месяц!</p>
-        <a href="#" class="btn btn_accent btn_lg action__btn">Подключить</a>
+        <a href="#" class="btn btn_accent btn_lg action__btn" data-fancybox data-src="#modal-callback" data-options='{"touch" : false}'>Подключить</a>
       </div>
     </div>
   </div>
@@ -501,7 +507,7 @@
         <div class="step__item">
           <img class="step__icon mb-3" src="/images/icons/step-mobile.svg" alt="">
           <p class="h5 mb-3">Вы оставляете заявку или звоните нам</p>
-          <a href="#" class="btn btn_md btn_accent">Оставить заявку</a>
+          <a href="#" class="btn btn_md btn_accent" data-fancybox data-src="#modal-callback" data-options='{"touch" : false}'>Оставить заявку</a>
         </div>
         <div class="step__item">
           <img class="step__icon mb-3" src="/images/icons/step-truck.svg" alt="">
@@ -611,7 +617,7 @@
             <img src="/images/faq.webp" alt="">
             <div class="faq-img__callback">
               <h5 class="h5 color-white">Остались вопросы?</h5>
-              <a href="#" class="btn btn_accent btn_lg">Обратный звонок</a>
+              <a href="#" class="btn btn_accent btn_lg" data-fancybox data-src="#modal-callback" data-options='{"touch" : false}'>Обратный звонок</a>
             </div>
           </div>
         </div>
@@ -619,8 +625,7 @@
           <p class="h2 color-black mb-5">Частые вопросы</p>
           <div class="accordion acc-faq">
             <div class="accordion__item acc-faq__item accordion__item_show">
-              <div
-                class="accordion__header acc-faq__header noSelect d-flex align-items-center justify-content-between">
+              <div class="accordion__header acc-faq__header noSelect d-flex align-items-center justify-content-between">
                 <div class="me-4">
                   <p class="fs-22">Что входит в стандартный пакет услуг компании?</p>
                 </div>
@@ -628,13 +633,16 @@
               </div>
               <div class="accordion__body acc-faq__body collapse">
                 <div class="accordion__content acc-faq__content">
-                  <p>При заказе базового пакета услуг наш специалист выезжает на ваш объект, производит замер текущего уровня сигнала, затем предлагает оптимальное решение по подключению. Выбирается лучшее место для размещения оборудования, заключается договор с клиентом, после чего начинается монтаж. Оборудование настраивается в соответствии с выбранным тарифом, и вы уже можете пользоваться безлимитным интернетом на скорости, указанной в договоре.</p>
+                  <p>При заказе базового пакета услуг наш специалист выезжает на ваш объект, производит замер текущего
+                    уровня сигнала, затем предлагает оптимальное решение по подключению. Выбирается лучшее место для
+                    размещения оборудования, заключается договор с клиентом, после чего начинается монтаж. Оборудование
+                    настраивается в соответствии с выбранным тарифом, и вы уже можете пользоваться безлимитным
+                    интернетом на скорости, указанной в договоре.</p>
                 </div>
               </div>
             </div>
             <div class="accordion__item acc-faq__item">
-              <div
-                class="accordion__header acc-faq__header noSelect d-flex align-items-center justify-content-between">
+              <div class="accordion__header acc-faq__header noSelect d-flex align-items-center justify-content-between">
                 <div class="me-4">
                   <p class="fs-22">Как рассчитывается стоимость подключения интернета в загородном доме?</p>
                 </div>
@@ -642,13 +650,16 @@
               </div>
               <div class="accordion__body acc-faq__body collapse">
                 <div class="accordion__content acc-faq__content">
-                  <p>При заказе базового пакета услуг наш специалист выезжает на ваш объект, производит замер текущего уровня сигнала, затем предлагает оптимальное решение по подключению. Выбирается лучшее место для размещения оборудования, заключается договор с клиентом, после чего начинается монтаж. Оборудование настраивается в соответствии с выбранным тарифом, и вы уже можете пользоваться безлимитным интернетом на скорости, указанной в договоре.</p>
+                  <p>При заказе базового пакета услуг наш специалист выезжает на ваш объект, производит замер текущего
+                    уровня сигнала, затем предлагает оптимальное решение по подключению. Выбирается лучшее место для
+                    размещения оборудования, заключается договор с клиентом, после чего начинается монтаж. Оборудование
+                    настраивается в соответствии с выбранным тарифом, и вы уже можете пользоваться безлимитным
+                    интернетом на скорости, указанной в договоре.</p>
                 </div>
               </div>
             </div>
             <div class="accordion__item acc-faq__item">
-              <div
-                class="accordion__header acc-faq__header noSelect d-flex align-items-center justify-content-between">
+              <div class="accordion__header acc-faq__header noSelect d-flex align-items-center justify-content-between">
                 <div class="me-4">
                   <p class="fs-22">Сколько времени необходимо на рассмотрение заявки?</p>
                 </div>
@@ -656,13 +667,16 @@
               </div>
               <div class="accordion__body acc-faq__body collapse">
                 <div class="accordion__content acc-faq__content">
-                  <p>При заказе базового пакета услуг наш специалист выезжает на ваш объект, производит замер текущего уровня сигнала, затем предлагает оптимальное решение по подключению. Выбирается лучшее место для размещения оборудования, заключается договор с клиентом, после чего начинается монтаж. Оборудование настраивается в соответствии с выбранным тарифом, и вы уже можете пользоваться безлимитным интернетом на скорости, указанной в договоре.</p>
+                  <p>При заказе базового пакета услуг наш специалист выезжает на ваш объект, производит замер текущего
+                    уровня сигнала, затем предлагает оптимальное решение по подключению. Выбирается лучшее место для
+                    размещения оборудования, заключается договор с клиентом, после чего начинается монтаж. Оборудование
+                    настраивается в соответствии с выбранным тарифом, и вы уже можете пользоваться безлимитным
+                    интернетом на скорости, указанной в договоре.</p>
                 </div>
               </div>
             </div>
             <div class="accordion__item acc-faq__item">
-              <div
-                class="accordion__header acc-faq__header noSelect d-flex align-items-center justify-content-between">
+              <div class="accordion__header acc-faq__header noSelect d-flex align-items-center justify-content-between">
                 <div class="me-4">
                   <p class="fs-22">Когда готовы приступить к работе?</p>
                 </div>
@@ -670,13 +684,16 @@
               </div>
               <div class="accordion__body acc-faq__body collapse">
                 <div class="accordion__content acc-faq__content">
-                  <p>При заказе базового пакета услуг наш специалист выезжает на ваш объект, производит замер текущего уровня сигнала, затем предлагает оптимальное решение по подключению. Выбирается лучшее место для размещения оборудования, заключается договор с клиентом, после чего начинается монтаж. Оборудование настраивается в соответствии с выбранным тарифом, и вы уже можете пользоваться безлимитным интернетом на скорости, указанной в договоре.</p>
+                  <p>При заказе базового пакета услуг наш специалист выезжает на ваш объект, производит замер текущего
+                    уровня сигнала, затем предлагает оптимальное решение по подключению. Выбирается лучшее место для
+                    размещения оборудования, заключается договор с клиентом, после чего начинается монтаж. Оборудование
+                    настраивается в соответствии с выбранным тарифом, и вы уже можете пользоваться безлимитным
+                    интернетом на скорости, указанной в договоре.</p>
                 </div>
               </div>
             </div>
             <div class="accordion__item acc-faq__item">
-              <div
-                class="accordion__header acc-faq__header noSelect d-flex align-items-center justify-content-between">
+              <div class="accordion__header acc-faq__header noSelect d-flex align-items-center justify-content-between">
                 <div class="me-4">
                   <p class="fs-22">Как происходит оплата?</p>
                 </div>
@@ -684,7 +701,11 @@
               </div>
               <div class="accordion__body acc-faq__body collapse">
                 <div class="accordion__content acc-faq__content">
-                  <p>При заказе базового пакета услуг наш специалист выезжает на ваш объект, производит замер текущего уровня сигнала, затем предлагает оптимальное решение по подключению. Выбирается лучшее место для размещения оборудования, заключается договор с клиентом, после чего начинается монтаж. Оборудование настраивается в соответствии с выбранным тарифом, и вы уже можете пользоваться безлимитным интернетом на скорости, указанной в договоре.</p>
+                  <p>При заказе базового пакета услуг наш специалист выезжает на ваш объект, производит замер текущего
+                    уровня сигнала, затем предлагает оптимальное решение по подключению. Выбирается лучшее место для
+                    размещения оборудования, заключается договор с клиентом, после чего начинается монтаж. Оборудование
+                    настраивается в соответствии с выбранным тарифом, и вы уже можете пользоваться безлимитным
+                    интернетом на скорости, указанной в договоре.</p>
                 </div>
               </div>
             </div>
@@ -694,11 +715,15 @@
     </div>
   </section>
 
-  <section>
+  <section class="overflow-hidden">
     <div class="container">
       <div class="col-lg-9">
         <p class="subtitle color-accent mb-2">Города подключения</p>
-        <h2 class="h2 color-black mb-4">Подключаем интернет по всей Московской области и в ближайшие регионы</h2>
+        <h2 class="h2 color-black mb-60">Подключаем интернет по всей Московской области и в ближайшие регионы</h2>
+      </div>
+    </div>
+    <div class="region-on-page">
+      <div class="container">
         <div class="region">
           <p class="subtitle mb-2 mb-sm-3">Выберите область</p>
           <div class="region__track mb-4">
@@ -780,22 +805,283 @@
     </div>
   </section>
 
+  <div class="offer-stripe mb-120">
+    <div class="container">
+      <div class="offer-stripe__wrp">
+        <div class="row align-items-end">
+          <div class="col-lg-7">
+            <h2 class="h2 mb-3 color-white">Комплект видеокамер + интернет</h2>
+            <p class="color-white">Используемые нами системы позволяют организовать видеонаблюдение с помощью сотового
+              телефона, 3G/4G модема или любого провайдера интернета.</p>
+          </div>
+          <div class="col-lg-2">
+            <a href="#" class="btn btn_accent btn_lg" data-fancybox data-src="#modal-callback" data-options='{"touch" : false}'>Оставить заявку</a>
+          </div>
+        </div>
+        <img class="offer-stripe__img" src="/images/offer.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <section class="reviews">
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col-lg-4">
+          <img src="/images/reviews-img.png" alt="" class="reviews__img">
+        </div>
+        <div class="col-lg-8">
+          <div class="reviews__wrp">
+            <div class="row mb-5">
+              <div class="col-6">
+                <p class="subtitle color-accent mb-2">Клиенты о нас</p>
+                <h2 class="h2 color-black">Отзывы</h2>
+              </div>
+              <div class="col-6">
+                <div class="text-lead __yellow">
+                  <p>За годы работы нашей компании у нас сложились доверительные отношения с нашими клиентами. За годы
+                    работы нашей компании у нас сложились доверительные отношения с нашими клиентами.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper slider-reviews">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="review-card__top">
+                      <div class="review-card__rating mb-4">
+                        <svg>
+                          <use href="/images/icons/sprites.svg#star"></use>
+                        </svg>
+                        <svg>
+                          <use href="/images/icons/sprites.svg#star"></use>
+                        </svg>
+                        <svg>
+                          <use href="/images/icons/sprites.svg#star"></use>
+                        </svg>
+                        <svg>
+                          <use href="/images/icons/sprites.svg#star"></use>
+                        </svg>
+                        <svg>
+                          <use href="/images/icons/sprites.svg#star"></use>
+                        </svg>
+                      </div>
+                      <p class="fs-20">Мы долгое время сталкивались с проблемным интернетом на нашей даче, но благодаря
+                        услугам вашей компании мы наконец-то получили стабильное и быстрое соединение! Теперь наши
+                        выходные на природе стали еще приятнее, так как мы можем наслаждаться интернетом без перебоев.
+                        Спасибо большое за профессиональный подход и качественные услуги!</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img src="/images/avatar-1.jpg" alt="" class="avatar me-3">
+                      <div>
+                        <p class="fs-20 fw-600 mb-1">Анна</p>
+                        <p class="subtitle">Интернет на дачу</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="review-card__top">
+                      <div class="review-card__rating mb-4">
+                        <svg>
+                          <use href="/images/icons/sprites.svg#star"></use>
+                        </svg>
+                        <svg>
+                          <use href="/images/icons/sprites.svg#star"></use>
+                        </svg>
+                        <svg>
+                          <use href="/images/icons/sprites.svg#star"></use>
+                        </svg>
+                        <svg>
+                          <use href="/images/icons/sprites.svg#star"></use>
+                        </svg>
+                        <svg>
+                          <use href="/images/icons/sprites.svg#star"></use>
+                        </svg>
+                      </div>
+                      <p class="fs-20">Мы долгое время сталкивались с проблемным интернетом на нашей даче, но благодаря
+                        услугам вашей компании мы наконец-то получили стабильное и быстрое соединение! Теперь наши
+                        выходные на природе стали еще приятнее, так как мы можем наслаждаться интернетом без перебоев.
+                        Спасибо большое за профессиональный подход и качественные услуги!</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img src="/images/avatar-1.jpg" alt="" class="avatar me-3">
+                      <div>
+                        <p class="fs-20 fw-600 mb-1">Анна</p>
+                        <p class="subtitle">Интернет на дачу</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review-card">
+                    <div class="review-card__top">
+                      <div class="review-card__rating mb-4">
+                        <svg>
+                          <use href="/images/icons/sprites.svg#star"></use>
+                        </svg>
+                        <svg>
+                          <use href="/images/icons/sprites.svg#star"></use>
+                        </svg>
+                        <svg>
+                          <use href="/images/icons/sprites.svg#star"></use>
+                        </svg>
+                        <svg>
+                          <use href="/images/icons/sprites.svg#star"></use>
+                        </svg>
+                        <svg>
+                          <use href="/images/icons/sprites.svg#star"></use>
+                        </svg>
+                      </div>
+                      <p class="fs-20">Мы долгое время сталкивались с проблемным интернетом на нашей даче, но благодаря
+                        услугам вашей компании мы наконец-то получили стабильное и быстрое соединение! Теперь наши
+                        выходные на природе стали еще приятнее, так как мы можем наслаждаться интернетом без перебоев.
+                        Спасибо большое за профессиональный подход и качественные услуги!</p>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <img src="/images/avatar-1.jpg" alt="" class="avatar me-3">
+                      <div>
+                        <p class="fs-20 fw-600 mb-1">Анна</p>
+                        <p class="subtitle">Интернет на дачу</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination slider-reviews__pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="callback pt-100 pb-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="callback__img">
+            <img src="/images/callback-img.webp" alt="">
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <p class="subtitle mb-2">Всегда на связи</p>
+          <h2 class="h2 color-black mb-3">Как с нами связаться?</h2>
+          <p class="mb-4">Позвоните, напишите в соцсетях или заполните форму ниже и оставьте заявку и в ближайшее время
+            мы вам перезвоним</p>
+          <div class="social mb-4">
+            <a href="#" class="social__link"><img src="/images/icons/telegram.svg" alt=""></a>
+            <a href="#" class="social__link"><img src="/images/icons/whatsapp.svg" alt=""></a>
+          </div>
+          <div class="mb-4">
+            <a href="tel:+780099999999" class="h5 color-black">8 800 999 999 99</a>
+          </div>
+          <form>
+            <div class="floating-label mb-3">
+              <input class="input callback__input floating-label__input" type="text" placeholder="Ваше имя*">
+              <label class="floating-label__label">Ваше имя*</label>
+            </div>
+            <div class="floating-label mb-3">
+              <input class="input callback__input floating-label__input js-mask-phone" type="text" placeholder="Номер телефона*">
+              <label class="floating-label__label">Номер телефона*</label>
+            </div>
+            <button class="btn btn_black btn_lg callback__btn">Оставить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 </div>
 
-    <footer class="footer">
+<footer class="footer">
 
-      
+  <div class="container">
 
-    </footer>
+    <div class="row">
+
+      <div class="col-lg-3">
+
+        <a href="#" class="logo footer__logo"><img src="/images/logo.svg" alt=""></a>
+
+      </div>
+
+      <div class="col-lg-3">
+
+        <nav class="footer__nav">
+
+          <p class="mb-4 fs-20 color-accent">Услуги</p>
+
+          <a href="#" class="footer__nav-link">Интернет</a>
+
+          <a href="#" class="footer__nav-link">Видеонаблюдение </a>
+
+          <a href="#" class="footer__nav-link">Усиление сигнала</a>
+
+          <a href="#" class="footer__nav-link">Телевидение</a>
+
+        </nav>
+
+      </div>
+
+      <div class="col-lg-3">
+
+        <nav class="footer__nav">
+
+          <p class="mb-4 fs-20 color-accent">О компании</p>
+
+          <a href="#" class="footer__nav-link">О нас</a>
+
+          <a href="#" class="footer__nav-link">Контакты</a>
+
+          <a href="#" class="footer__nav-link">Отзывы</a>
+
+          <a href="#" class="footer__nav-link">Вопросы</a>
+
+        </nav>
+
+      </div>
+
+      <div class="col-lg-3 text-end">
+
+        <div class="mb-3 text-end">
+
+          <a href="tel:+780099999999" class="h5 color-white">8 800 999 999 99</a>
+
+        </div>
+
+        <div class="social justify-content-end mb-4">
+
+          <a href="#" class="social__link"><img src="/images/icons/telegram.svg" alt=""></a>
+
+          <a href="#" class="social__link"><img src="/images/icons/whatsapp.svg" alt=""></a>
+
+        </div>
+
+        <div class="btn btn_lg btn_accent" data-fancybox data-src="#modal-location" data-options='{"touch" : false}'>
+
+          <span class="fs-18 fw-500">Выбрать город</span>
+
+        </div>
+
+      </div>
+
+    </div>
 
   </div>
 
+</footer>
+
+</div>
 
 
-  <div class="modal modal-location" id="modal-location" style="display:none;">
 
-    <button data-fancybox-close class="close-btn modal__close-btn" title="Close"></button>
+<div class="modal modal-location" id="modal-location" style="display:none;">
+
+  <button data-fancybox-close class="close-btn modal__close-btn" title="Close"></button>
+
+  <div class="modal-location__wrp">
 
     <p class="h3 color-black mb-4 mb-lg-5">Города подключения</p>
 
@@ -960,6 +1246,60 @@
     </div>
 
   </div>
+
+</div>
+
+
+
+<div class="modal modal-callback" id="modal-callback" style="display:none;">
+
+  <button data-fancybox-close class="close-btn modal__close-btn" title="Close"></button>
+
+  <div class="modal-callback__wrp">
+
+    <div class="modal-callback__content">
+
+      <p class="h3 color-black mb-3">Заказать подключение</p>
+
+      <p class="mb-4">Заполните форму ниже и наши менеджеры свяжутся с Вами.</p>
+
+      <form>
+
+        <div class="floating-label mb-3">
+
+          <input class="input callback__input __border floating-label__input" type="text" placeholder="Ваше имя*">
+
+          <label class="floating-label__label">Ваше имя*</label>
+
+        </div>
+
+        <div class="floating-label mb-3">
+
+          <input class="input callback__input __border floating-label__input js-mask-phone" type="text"
+
+            placeholder="Номер телефона*" maxlength="17">
+
+          <label class="floating-label__label">Номер телефона*</label>
+
+        </div>
+
+        <button class="btn btn_accent btn_lg callback__btn mb-3">Оставить заявку</button>
+
+        <p>Нажимая, вы даете согласие на обработку персональных данных.</p>
+
+      </form>
+
+    </div>
+
+    <div class="modal-callback__img">
+
+      <img src="/images/router.jpg" alt="">
+
+    </div>
+
+  </div>
+
+</div>
 
 
 

@@ -29,6 +29,9 @@
 .bg-black {
   background-color: var(--dark-bg);
 }
+.bg-accent {
+  background-color: var(--accent);
+}
 
 .pb-120 {
   @include adaptiv-value("padding-bottom", 120, 60, 1);
@@ -44,6 +47,12 @@
 }
 .pt-180 {
   @include adaptiv-value("padding-top", 180, 90, 1);
+}
+.pb-100 {
+  @include adaptiv-value("padding-bottom", 100, 60, 1);
+}
+.pt-100 {
+  @include adaptiv-value("padding-top", 100, 60, 1);
 }
 .mb-160 {
   @include adaptiv-value("margin-bottom", 160, 80, 1);

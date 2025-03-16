@@ -55,4 +55,7 @@
       transform: translateY(0);
     }
   }
+  .footer__nav-link:hover {
+    color: var(--accent-darker);
+  }
 }

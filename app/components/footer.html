@@ -1,10 +1,47 @@
-    <footer class="footer">
-      
-    </footer>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <a href="#" class="logo footer__logo"><img src="/images/logo.svg" alt=""></a>
+      </div>
+      <div class="col-lg-3">
+        <nav class="footer__nav">
+          <p class="mb-4 fs-20 color-accent">Услуги</p>
+          <a href="#" class="footer__nav-link">Интернет</a>
+          <a href="#" class="footer__nav-link">Видеонаблюдение </a>
+          <a href="#" class="footer__nav-link">Усиление сигнала</a>
+          <a href="#" class="footer__nav-link">Телевидение</a>
+        </nav>
+      </div>
+      <div class="col-lg-3">
+        <nav class="footer__nav">
+          <p class="mb-4 fs-20 color-accent">О компании</p>
+          <a href="#" class="footer__nav-link">О нас</a>
+          <a href="#" class="footer__nav-link">Контакты</a>
+          <a href="#" class="footer__nav-link">Отзывы</a>
+          <a href="#" class="footer__nav-link">Вопросы</a>
+        </nav>
+      </div>
+      <div class="col-lg-3 text-end">
+        <div class="mb-3 text-end">
+          <a href="tel:+780099999999" class="h5 color-white">8 800 999 999 99</a>
+        </div>
+        <div class="social justify-content-end mb-4">
+          <a href="#" class="social__link"><img src="/images/icons/telegram.svg" alt=""></a>
+          <a href="#" class="social__link"><img src="/images/icons/whatsapp.svg" alt=""></a>
+        </div>
+        <div class="btn btn_lg btn_accent" data-fancybox data-src="#modal-location" data-options='{"touch" : false}'>
+          <span class="fs-18 fw-500">Выбрать город</span>
+        </div>
+      </div>
+    </div>
   </div>
+</footer>
+</div>
 
-  <div class="modal modal-location" id="modal-location" style="display:none;">
-    <button data-fancybox-close class="close-btn modal__close-btn" title="Close"></button>
+<div class="modal modal-location" id="modal-location" style="display:none;">
+  <button data-fancybox-close class="close-btn modal__close-btn" title="Close"></button>
+  <div class="modal-location__wrp">
     <p class="h3 color-black mb-4 mb-lg-5">Города подключения</p>
     <div class="region">
       <p class="subtitle mb-2 mb-sm-3">Выберите область</p>
@@ -87,6 +124,33 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="modal modal-callback" id="modal-callback" style="display:none;">
+  <button data-fancybox-close class="close-btn modal__close-btn" title="Close"></button>
+  <div class="modal-callback__wrp">
+    <div class="modal-callback__content">
+      <p class="h3 color-black mb-3">Заказать подключение</p>
+      <p class="mb-4">Заполните форму ниже и наши менеджеры свяжутся с Вами.</p>
+      <form>
+        <div class="floating-label mb-3">
+          <input class="input callback__input __border floating-label__input" type="text" placeholder="Ваше имя*">
+          <label class="floating-label__label">Ваше имя*</label>
+        </div>
+        <div class="floating-label mb-3">
+          <input class="input callback__input __border floating-label__input js-mask-phone" type="text"
+            placeholder="Номер телефона*" maxlength="17">
+          <label class="floating-label__label">Номер телефона*</label>
+        </div>
+        <button class="btn btn_accent btn_lg callback__btn mb-3">Оставить заявку</button>
+        <p>Нажимая, вы даете согласие на обработку персональных данных.</p>
+      </form>
+    </div>
+    <div class="modal-callback__img">
+      <img src="/images/router.jpg" alt="">
+    </div>
+  </div>
+</div>
 
 <!-- <script src="js/main.min.js"></script> -->
 <script src="js/main.js"></script>
