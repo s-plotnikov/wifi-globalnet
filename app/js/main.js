@@ -53,11 +53,10 @@ $(document).ready(function () {
   }
 });
 
-const swiperGallery = new Swiper(".slider-reviews", {
+const swiperReviews = new Swiper(".slider-reviews", {
   loop: true,
   slidesPerView: 1,
-  spaceBetween: 15,
-  direction: "vertical",
+  effect: "fade",
   mousewheel: true,
   pagination: {
     el: ".slider-reviews__pagination",
