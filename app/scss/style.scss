@@ -974,6 +974,7 @@
   border-radius: 50%;
   overflow: hidden;
   object-fit: cover;
+  flex-shrink: 0;
 }
 
 .slider-reviews {
@@ -983,6 +984,8 @@
 .swiper-pagination.slider-reviews__pagination {
   width: auto;
   right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
   left: auto;
   display: flex;
   flex-direction: column;
