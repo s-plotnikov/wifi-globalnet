@@ -65,4 +65,10 @@
   .region__tab:hover {
     border-color: var(--accent);
   }
+  .slider-btn:hover {
+    border-color: var(--accent) !important;
+    &::after {
+      border-color: var(--accent) !important;
+    }
+  }
 }
