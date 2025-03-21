@@ -612,7 +612,7 @@
   max-width: 350px;
   width: 100%;
   margin: auto;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 .switch{
   cursor: pointer;
@@ -649,15 +649,64 @@
   height: 100%;
   border: 1px solid var(--border-color);
   border-radius: 20px;
-  padding: 60px 20px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
+  background-color: #fff;
   &__top {
-    text-align: center;
     padding-bottom: 30px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 22px;
+    border-bottom: 1px solid var(--gray);
+  }
+  &.__sale {
+    border-color: var(--accent);
+    &::before {
+      position: absolute;
+      content: 'Акция';
+      text-align: center;
+      color: #fff;
+      font-size: 20px;
+      padding-top: 2px;
+      font-weight: 600;
+      width: calc(100% + 4px);
+      height: calc(100% + 40px);
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      background-color: var(--accent);
+      border-radius: 20px;
+      z-index: -1;
+    }    
+  }
+  &__speed {
+    padding: 6px 12px;
+    background-color: var(--gray);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block;
+  }
+  &__btn {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.tarif-card__price {
+  .current-price {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .old-price {
+    font-size: 18px;
+    text-decoration: line-through;
+    opacity: 0.7;
+  }
+  .per-mounth {
+    font-size: 18px;
+    color: var(--gray-text);
   }
 }
 
@@ -1264,6 +1313,19 @@
     &::before {
       background-color: rgba(50, 53, 64, 17%);
     }
+  }
+}
+
+.modal-success {
+  max-width: 600px;
+  width: 100%;
+  padding: 0;
+  overflow: visible;
+  border-radius: 20px;
+  &__wrp {
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 50px;
   }
 }
 

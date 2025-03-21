@@ -271,4 +271,22 @@
   .menu__phone {
     justify-content: center;
   }
+  .modal-callback__img {
+    display: none;
+  }
+  .modal-callback__content {
+    padding: 32px 20px 20px;
+  }
+  .modal__close-btn {
+    top: 0;
+  }
+  .service-card__arrow {
+    width: 46px;
+    height: 46px;
+    opacity: 0.8;
+    svg {
+      width: 26px;
+      height: 26px;
+    }
+  }
 }
