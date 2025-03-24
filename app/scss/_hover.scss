@@ -71,4 +71,12 @@
       border-color: var(--accent) !important;
     }
   }
+  .modal__close-btn:hover {
+    background-color: var(--accent-darker);
+    transform: translate(50%, -50%) rotate(90deg);
+    &::after,
+    &::before {
+      background-color: #fff;
+    }
+  }
 }

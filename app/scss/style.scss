@@ -815,12 +815,22 @@
     height: 64px;
     font-size: 18px;
   }
+  &__decor {
+    position: relative;
+    height: 100%;
+    img {
+      position: absolute;
+      right: 0;
+      bottom: -100px;
+    }
+  }
 }
 
 .step {
   background-color: var(--lightgray);
   border-radius: 20px;
   display: flex;
+  position: relative;
   &__item {
     padding: 45px 50px;
     width: 25%;
@@ -1257,6 +1267,7 @@
     right: 0;
     transform: translate(50%, -50%);
     z-index: 5;
+    transition: background-color 0.25s, transform 0.25s;
   }
 }
 
