@@ -31,6 +31,17 @@ $(function () {
     $(".menu").removeClass("__open");
   });
 
+  $(document).ready(function(){
+    $(".js-anchor").on("click", function(e){
+      var anchor = $(this);
+      $('html, body').stop().animate({
+        scrollTop: $(anchor.attr('href')).offset().top - 150
+      }, 500);
+      e.preventDefault();
+      return false;
+    });
+  });
+
 });
 
 // АККОРДИОН
