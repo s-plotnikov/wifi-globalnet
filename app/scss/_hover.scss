@@ -79,4 +79,22 @@
       background-color: #fff;
     }
   }
+  .blog-card:hover {
+    .blog-card__img img {
+      transform: translateX(20px);
+    }
+  }
+  .blog-card__title:hover {
+    color: var(--accent);
+  }
+  .link_underline:hover span {
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+  .breadcrumbs__link:not(.__current):hover {
+    color: var(--accent);
+  }
+  .article__anchor:hover {
+    color: var(--accent);
+  }
 }
