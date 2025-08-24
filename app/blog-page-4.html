@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Wifi Globalnet</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.mask.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="page">
+    <div class="page__wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrp">
+            <a href="#" class="logo header__logo">
+              <img class="__white" src="/images/logo.svg" alt="">
+              <img class="__dark" src="/images/logo-dark.svg" alt="">
+            </a>
+            <div class="header__content">
+              <div class="header__top">
+                <div class="d-none d-lg-flex">
+                  <a class="header__link hover me-4 me-xl-5" href="#">Для дома</a>
+                  <a class="header__link hover" href="business.html">Для бизнеса</a>
+                </div>
+                <div class="header__contacts">
+                  <div class="social header__social">
+                    <a href="#" class="social__link"><img src="/images/icons/telegram.svg" alt=""></a>
+                    <a href="#" class="social__link"><img src="/images/icons/whatsapp.svg" alt=""></a>
+                  </div>
+                  <a class="phone header__phone hover" href="tel:+780099999999">
+                    <svg>
+                      <use href="/images/icons/sprites.svg#phone"></use>
+                    </svg>
+                    <span>8 800 999 999 99</span>
+                  </a>
+                  <div class="btn btn_accent btn_md header__btn d-none d-md-flex" data-fancybox data-src="#modal-callback" data-options='{"touch" : false}'>Обратный звонок</div>
+                </div>
+                <div class="menu-btn js-open-menu header__menu-btn">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="header__bottom">
+                <nav class="header__nav">
+                  <a href="#" class="header__nav-link hover">Интернет</a>
+                  <a href="video.html" class="header__nav-link hover">Видеонаблюдение </a>
+                  <a href="tv.html" class="header__nav-link hover">Телевидение</a>
+                  <a href="#tarif" class="header__nav-link hover js-anchor">Тарифы</a>
+                  <a href="#about" class="header__nav-link hover js-anchor">О нас</a>
+                  <a href="#reviews" class="header__nav-link hover js-anchor">Отзывы</a>
+                </nav>
+                <div class="header__location location" data-fancybox data-src="#modal-location" data-options='{"touch" : false}'>
+                  <svg>
+                    <use href="/images/icons/sprites.svg#location"></use>
+                  </svg>
+                  <span class="fs-18 fw-500">Выбрать город</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="menu">
+        <div class="menu-top">
+          <div class="container">
+            <div class="menu-top__wrp">
+              <a href="#" class="logo menu__logo">
+                <img class="__dark" src="/images/logo-dark.svg" alt="">
+              </a>
+              <div class="menu__close close-btn js-close-menu"></div>
+            </div>
+          </div>
+        </div>
+        <div class="menu-main">
+          <div class="container">
+            <div class="menu__location location mb-4" data-fancybox data-src="#modal-location" data-options='{"touch" : false}'>
+              <svg>
+                <use href="/images/icons/sprites.svg#location"></use>
+              </svg>
+              <span class="fs-18 fw-500">Выбрать город</span>
+            </div>
+            <nav class="menu__nav mb-4">
+              <a href="#" class="menu__nav-link">Интернет</a>
+              <a href="#" class="menu__nav-link">Видеонаблюдение</a>
+              <a href="#" class="menu__nav-link">Телевидение</a>
+              <a href="#" class="menu__nav-link">Тарифы</a>
+              <a href="#" class="menu__nav-link">О нас</a>
+              <a href="#" class="menu__nav-link">Отзывы</a>
+            </nav>
+            <div class="social menu__social mb-4">
+              <a href="#" class="social__link"><img src="/images/icons/telegram.svg" alt=""></a>
+              <a href="#" class="social__link"><img src="/images/icons/whatsapp.svg" alt=""></a>
+            </div>
+            <a class="phone menu__phone" href="tel:+780099999999">
+              <svg>
+                <use href="/images/icons/sprites.svg#phone"></use>
+              </svg>
+              <span class="fw-500 ms-2 fs-20">8 800 999 999 99</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+ 
+
+<main class="main">
+  <div class="hero __sm">
+    <picture>
+      <source srcset="/images/blog.webp" media="(max-width: 768px)">
+      <img class="hero__bg" src="/images/blog.webp" alt="">
+    </picture>
+    <div class="container hero__container">
+      <div class="col-lg-10 mb-4">
+        <h1 class="h1 mb-4">Что влияет на качество мобильного интернета за городом</h1>
+        <div class="breadcrumbs">
+          <a href="#" class="breadcrumbs__link">Главная</a>
+          <div class="breadcrumbs__div">/</div>
+          <a href="#" class="breadcrumbs__link">Блог</a>
+          <div class="breadcrumbs__div">/</div>
+          <div class="breadcrumbs__link __current">Что влияет на качество мобильного интернета за городом</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="pb-160 article">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="order-2 order-lg-0 col-lg-8 content-wrapper">
+          <div class="mb-60">
+            <div class="article__img mb-3">
+              <img src="/images/blog-content.jpg" alt="">
+              <div class="article__date">06.06.2025</div>
+            </div>
+          </div>
+          <p class="fs-18 fw-600">
+            Стабильный <a href="/internet/" class="link_underline"><span>мобильный интернет на даче</span></a>  или в деревне перестал быть роскошью. Сегодня он нужен для удалённой работы, управления системами безопасности, видеонаблюдения, а также для потокового видео и онлайн-общения. Однако многие пользователи сталкиваются с ситуацией, когда заявленная оператором скорость не соответствует реальности. Чтобы понять, как добиться качественного соединения, необходимо разобраться в факторах, влияющих на работу сети за пределами города.
+          </p>
+          <h2 class="h4 color-black js-article-subtitle">Удалённость от базовой станции</h2>
+          <p>Первый и наиболее очевидный фактор — расстояние до ближайшей базовой станции оператора. Чем дальше объект, тем выше потери сигнала, что проявляется в виде низкой скорости передачи данных и нестабильного соединения. На загородных участках это особенно заметно, так как радиус покрытия может быть ограничен рельефом или лесными массивами.</p>
+          <h2 class="h4 color-black js-article-subtitle">Особенности рельефа и застройки</h2>
+          <p>
+            Холмы, густые деревья, здания из бетона или металлоконструкций существенно ухудшают прохождение радиосигнала. Даже при нахождении в зоне покрытия возможны резкие скачки скорости и пинг, если сигнал «отражается» или экранируется препятствиями.
+          </p>
+          <h2 class="h4 color-black js-article-subtitle">Перегрузка сети</h2>
+          <p>
+            Даже при хорошем уровне сигнала скорость может падать из-за высокой загрузки базовой станции. Вечером и по выходным, когда многие дачники пользуются мобильным интернетом одновременно, нагрузка на оборудование оператора возрастает. В результате появляются задержки, снижается стабильность видеозвонков и скорость загрузки контента.
+          </p>
+          <h2 class="h4 color-black js-article-subtitle">Качество оборудования на стороне пользователя</h2>
+          <p>
+            Не стоит недооценивать роль клиентского оборудования. Смартфоны и модемы с устаревшими модулями связи хуже справляются с агрегацией частот и часто не поддерживают современные технологии вроде 4G+. Роутеры без MIMO-антенн также ограничивают пропускную способность, что критично при потоковой передаче данных или работе нескольких пользователей в сети.
+          </p>
+          <p>
+            Даже при стабильной зоне покрытия плохое оборудование или перегруженная сеть могут снижать скорость. Решением может стать <a href="/internet/" class="link_underline"><span>подключение безлимитного интернета</span></a> с усилителем сигнала и современным роутером. В этом случае мы настраиваем не только сам репитер, но и подбираем антенну по частоте и направлению, чтобы минимизировать потери и задействовать несколько диапазонов связи.
+          </p>
+          <h2 class="h4 color-black js-article-subtitle">Влияние погодных условий</h2>
+          <p>
+            Дождь, снег и высокая влажность влияют на распространение радиоволн, особенно в высокочастотных диапазонах LTE. Сильные грозы и ураганы могут временно снижать уровень сигнала или даже выводить оборудование из строя. При монтаже систем усиления важно учитывать защиту оборудования от атмосферных воздействий и правильное заземление.
+          </p>
+          <div class="quote mt-4">
+            <div class="quote__text mb-3">
+              «Мы всегда начинаем с замеров уровня и качества сигнала по всем доступным диапазонам. Это позволяет правильно подобрать частоту для внешней антенны и задать приоритеты роутеру. Такой подход обеспечивает высокую стабильность даже при перегрузке базовой станции»
+            </div>
+            <div class="quote__author">— Алексей Морозов, ведущий инженер проектов WiFi GlobalNet</div>
+          </div>
+          <h2 class="h4 color-black js-article-subtitle">Оптимизация сетевых решений</h2>
+          <p>
+            Для профессионального подхода к загородному интернету недостаточно просто установить модем и антенну. Мы проводим замеры сигнала на участке, анализируем доступные частоты и тестируем нагрузку на ближайшие базовые станции. Такой подход позволяет определить оптимальную схему подключения, настроить роутер на приоритетные диапазоны и обеспечить стабильность работы даже при пиковой нагрузке сети.
+          </p>
+          <h2 class="h4 color-black js-article-subtitle">Итог</h2>
+          <p>
+            Качество мобильного интернета за городом зависит от множества факторов: расстояния до базовой станции, особенностей рельефа, уровня загрузки сети и характеристик оборудования. Самостоятельные попытки усилить сигнал часто дают кратковременный результат. Грамотный подбор антенн, репитеров и маршрутизаторов, а также правильная настройка параметров сети позволяют добиться высокой стабильности и скорости передачи данных.
+          </p>
+          <p>
+            <span class="fw-600">WiFi GlobalNet</span> обеспечивает профессиональный монтаж интернета загородом с применением современного оборудования. Наши специалисты не только выполняют установку, но и проводят диагностику, чтобы система работала без перебоев и обеспечивала стабильный канал связи для любых задач.
+          </p>
+        </div>
+        <div class="order-1 order-lg-0 col-lg-4 col-xl-3 offset-xl-1 mb-4 mb-lg-0">
+          <div class="article__aside">
+            <div class="article__anchor-wrp js-aside"></div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="link_underline color-black"><span>К списку статей</span></a>
+    </div>
+  </section>
+
+  <!-- Title:
+Качество мобильного интернета за городом: способы улучшения
+Description:
+Нестабильный интернет за городом — частая проблема. Как рельеф, погодные условия и оборудование влияют на качество связи. -->
+
+  <section class="callback pt-100 pb-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="callback__img">
+            <img src="/images/callback-img.webp" alt="">
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <p class="subtitle mb-2">Всегда на связи</p>
+          <h2 class="h2 color-black mb-3">Как с нами связаться?</h2>
+          <p class="mb-4">Позвоните, напишите в соцсетях или заполните форму ниже и оставьте заявку и в ближайшее время
+            мы вам перезвоним</p>
+          <div class="social mb-4">
+            <a href="#" class="social__link"><img src="/images/icons/telegram.svg" alt=""></a>
+            <a href="#" class="social__link"><img src="/images/icons/whatsapp.svg" alt=""></a>
+          </div>
+          <div class="mb-4">
+            <a href="tel:+780099999999" class="h5 color-black">8 800 999 999 99</a>
+          </div>
+          <form>
+            <div class="floating-label mb-3">
+              <input class="input callback__input floating-label__input" type="text" placeholder="Ваше имя*">
+              <label class="floating-label__label">Ваше имя*</label>
+            </div>
+            <div class="floating-label mb-3">
+              <input class="input callback__input floating-label__input js-mask-phone" type="text"
+                placeholder="Номер телефона*">
+              <label class="floating-label__label">Номер телефона*</label>
+            </div>
+            <button class="btn btn_black btn_lg callback__btn">Оставить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+</div>
+
+<footer class="footer">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-4 col-lg-3 mb-5 mb-lg-0">
+
+        <a href="#" class="logo footer__logo"><img src="/images/logo.svg" alt=""></a>
+
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mb-5 mb-lg-0">
+
+        <nav class="footer__nav">
+
+          <p class="mb-4 fs-20 color-accent">Услуги</p>
+
+          <a href="#" class="footer__nav-link">Интернет</a>
+
+          <a href="#" class="footer__nav-link">Видеонаблюдение </a>
+
+          <a href="#" class="footer__nav-link">Усиление сигнала</a>
+
+          <a href="#" class="footer__nav-link">Телевидение</a>
+
+        </nav>
+
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3 mb-5 mb-lg-0">
+
+        <nav class="footer__nav">
+
+          <p class="mb-4 fs-20 color-accent">О компании</p>
+
+          <a href="#" class="footer__nav-link">О нас</a>
+
+          <a href="#" class="footer__nav-link">Контакты</a>
+
+          <a href="#" class="footer__nav-link">Отзывы</a>
+
+          <a href="#" class="footer__nav-link">Вопросы</a>
+
+        </nav>
+
+      </div>
+
+      <div class="col-lg-3 text-lg-end">
+
+        <div class="mb-3 text-lg-end">
+
+          <a href="tel:+780099999999" class="h5 color-white">8 800 999 999 99</a>
+
+        </div>
+
+        <div class="social justify-content-lg-end mb-4">
+
+          <a href="#" class="social__link"><img src="/images/icons/telegram.svg" alt=""></a>
+
+          <a href="#" class="social__link"><img src="/images/icons/whatsapp.svg" alt=""></a>
+
+        </div>
+
+        <div class="btn btn_lg btn_accent" data-fancybox data-src="#modal-location" data-options='{"touch" : false}'>
+
+          <span class="fs-18 fw-500">Выбрать город</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+</div>
+
+
+
+<div class="modal modal-location" id="modal-location" style="display:none;">
+
+  <button data-fancybox-close class="close-btn modal__close-btn" title="Close"></button>
+
+  <div class="modal-location__wrp">
+
+    <p class="h3 color-black mb-4 mb-lg-5">Города подключения</p>
+
+    <div class="region">
+
+      <p class="subtitle mb-2 mb-sm-3">Выберите область</p>
+
+      <div class="region__track mb-4">
+
+        <div class="region__tab __current">Московская</div>
+
+        <div class="region__tab">Калужская</div>
+
+        <div class="region__tab">Рязанская</div>
+
+        <div class="region__tab">Владимирская</div>
+
+        <div class="region__tab">Ярославская</div>
+
+        <div class="region__tab">Тверская</div>
+
+      </div>
+
+      <div class="region__table mb-4">
+
+        <div class="region__table-item">
+
+          <p class="color-gray mb-1 mb-sm-2">Район</p>
+
+          <div class="region__list-wrp">
+
+            <div class="region__list">
+
+              <div class="region__link __current">Балашихинский район</div>
+
+              <div class="region__link">Волоколамский район</div>
+
+              <div class="region__link">Воскресенский район</div>
+
+              <div class="region__link">Дмитровский район</div>
+
+              <div class="region__link">Домодедовский район</div>
+
+              <div class="region__link">Егорьевский район</div>
+
+              <div class="region__link">Зарайский район</div>
+
+              <div class="region__link">Истринский район</div>
+
+              <div class="region__link">Бронницы</div>
+
+              <div class="region__link">Дзержинский</div>
+
+              <div class="region__link">Егорьевский район</div>
+
+              <div class="region__link">Зарайский район</div>
+
+              <div class="region__link">Истринский район</div>
+
+              <div class="region__link">Бронницы</div>
+
+              <div class="region__link">Дзержинский</div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="region__table-item">
+
+          <p class="color-gray mb-1 mb-sm-2">Населенный пункт</p>
+
+          <div class="region__search">
+
+            <div class="search">
+
+              <input class="search__input" type="search" name="search" placeholder="Найти город">
+
+              <span class="search__btn">
+
+                <svg>
+
+                  <use href="/images/icons/sprites.svg#find">
+
+                  </use>
+
+                </svg>
+
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="region__list-wrp">
+
+            <div class="region__list">
+
+              <div class="region__link">Березняки</div>
+
+              <div class="region__link">ДНТ Гранат</div>
+
+              <div class="region__link">СНТ Забота</div>
+
+              <div class="region__link">Салтыковка</div>
+
+              <div class="region__link">Полтево</div>
+
+              <div class="region__link">Соболиха</div>
+
+              <div class="region__link">СПО Ветеран</div>
+
+              <div class="region__link">СПО Кучинское</div>
+
+              <div class="region__link">Полтево</div>
+
+              <div class="region__link">Соболиха</div>
+
+              <div class="region__link">СПО Ветеран</div>
+
+              <div class="region__link">СПО Кучинское</div>
+
+              <div class="region__link">Березняки</div>
+
+              <div class="region__link">ДНТ Гранат</div>
+
+              <div class="region__link">СНТ Забота</div>
+
+              <div class="region__link">Салтыковка</div>
+
+              <div class="region__link">Полтево</div>
+
+              <div class="region__link">Соболиха</div>
+
+              <div class="region__link">СПО Ветеран</div>
+
+              <div class="region__link">СПО Кучинское</div>
+
+              <div class="region__link">Полтево</div>
+
+              <div class="region__link">Соболиха</div>
+
+              <div class="region__link">СПО Ветеран</div>
+
+              <div class="region__link">СПО Кучинское</div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="text-end">
+
+        <a class="btn btn_lg btn_accent" href="#">Оставить заявку на подключение</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<div class="modal modal-callback" id="modal-callback" style="display:none;">
+
+  <button data-fancybox-close class="close-btn modal__close-btn" title="Close"></button>
+
+  <div class="modal-callback__wrp">
+
+    <div class="modal-callback__content">
+
+      <p class="h3 color-black mb-3">Заказать подключение</p>
+
+      <p class="mb-4">Заполните форму ниже и наши менеджеры свяжутся с Вами.</p>
+
+      <form>
+
+        <div class="floating-label mb-3">
+
+          <input class="input callback__input __border floating-label__input" type="text" placeholder="Ваше имя*">
+
+          <label class="floating-label__label">Ваше имя*</label>
+
+        </div>
+
+        <div class="floating-label mb-3">
+
+          <input class="input callback__input __border floating-label__input js-mask-phone" type="text"
+
+            placeholder="Номер телефона*" maxlength="17">
+
+          <label class="floating-label__label">Номер телефона*</label>
+
+        </div>
+
+        <button class="btn btn_accent btn_lg callback__btn mb-3">Оставить заявку</button>
+
+        <p>Нажимая, вы даете согласие на обработку персональных данных.</p>
+
+      </form>
+
+    </div>
+
+    <div class="modal-callback__img">
+
+      <img src="/images/router.jpg" alt="">
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<div class="modal modal-success" id="modal-success" style="display:none;">
+
+  <button data-fancybox-close class="close-btn modal__close-btn" title="Close"></button>
+
+  <div class="modal-success__wrp">
+
+    <h2 class="h2 mb-4">Отправлено!</h2>
+
+    <p class="mb-4">Мы получили вашу заявку и свяжемся с вами в ближайшее время.</p>
+
+    <div data-fancybox-close="" class="btn btn_accent btn_lg">Хорошо</div>
+
+  </div>
+
+</div>
+
+
+
+<!-- <script src="js/main.min.js"></script> -->
+
+<script src="js/main.js"></script>
+
+</body>
+
+
+
+</html>
